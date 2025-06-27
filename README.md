@@ -1,4 +1,4 @@
-# Disease Diagnosis Chatbot
+# Healthcare Assitant
 
 A simple web-based chatbot that helps users identify possible diseases based on their symptoms and provides basic medication and precaution information.
 
