@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthCare Assistant</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-content">
+            <div class="logo">HealthCare Assistant</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Personal Health Assistant</h1>
+            <p>Get instant preliminary medical advice based on your symptoms</p>
+            <button class="cta-button">Learn More</button>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="service-cards">
+            <div class="service-card">
+                <i class="fas fa-stethoscope"></i>
+                <h3>Symptom Analysis</h3>
+                <p>Quick analysis of your symptoms</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pills"></i>
+                <h3>Medicine Suggestions</h3>
+                <p>Get medication recommendations</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Precautions</h3>
+                <p>Learn preventive measures</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We provide AI-powered preliminary medical advice to help you understand your symptoms better. Remember, this is not a substitute for professional medical consultation.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <p>Have questions? Reach out to us!</p>
+        <div class="contact-info">
+            <p><i class="fas fa-envelope"></i> support@healthcareassistant.com</p>
+            <p><i class="fas fa-phone"></i> +1 (555) 123-4567</p>
+        </div>
+    </section>
+
+    <!-- Chat Icon -->
+    <div class="chat-icon" onclick="toggleChat()">
+        <i class="fas fa-comments"></i>
+    </div>
+
+    <!-- Chat Window -->
+    <div class="chat-window" id="chatWindow">
+        <div class="chat-header">
+            <h3>Medical Assistant</h3>
+            <button class="close-chat" onclick="toggleChat()">×</button>
+        </div>
+        <div class="chat-box" id="chatBox">
+            <div class="message bot">
+                Hello! I'm your medical assistant. Please describe your symptoms, and I'll help you identify possible conditions and suggest remedies.
+            </div>
+        </div>
+        <div class="input-area">
+            <input type="text" id="userInput" placeholder="Type your symptoms here...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
